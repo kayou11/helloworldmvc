@@ -1,0 +1,24 @@
+#surefire
+#Tue Jun 07 15:05:01 CEST 2016
+testClassesDirectory=/Users/PierreKayou/git/helloworldmvc/helloworldmvc/contract/target/test-classes
+classPathUrl.2=/Users/PierreKayou/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
+useManifestOnlyJar=true
+classPathUrl.1=/Users/PierreKayou/git/helloworldmvc/helloworldmvc/contract/target/classes
+reportsDirectory=/Users/PierreKayou/git/helloworldmvc/helloworldmvc/contract/target/surefire-reports
+classPathUrl.0=/Users/PierreKayou/git/helloworldmvc/helloworldmvc/contract/target/test-classes
+providerConfiguration=org.apache.maven.surefire.junit.JUnit3Provider
+testSuiteDefinitionTestSourceDirectory=/Users/PierreKayou/git/helloworldmvc/helloworldmvc/contract/src/test/java
+surefireClassPathUrl.1=/Users/PierreKayou/.m2/repository/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.jar
+surefireClassPathUrl.0=/Users/PierreKayou/.m2/repository/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.jar
+runOrder=filesystem
+useSystemClassLoader=true
+excludes0=**/*$*
+isTrimStackTrace=true
+tc.0=org.contract.AppTest
+enableAssertions=true
+includes2=**/*TestCase.java
+failIfNoTests=false
+includes1=**/*Test.java
+runStatisticsFile=/Users/PierreKayou/git/helloworldmvc/helloworldmvc/contract/.surefire-E8A02BAB72E8F946C5A19BB7E5707AD19CD484B2
+includes0=**/Test*.java
+childDelegation=false
