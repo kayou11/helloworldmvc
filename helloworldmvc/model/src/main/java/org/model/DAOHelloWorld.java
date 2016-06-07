@@ -44,20 +44,20 @@ public class DAOHelloWorld{
 	
 	public String getQuerySelectFirstHelloWorld() throws SQLException {
 		
-		String requete = "SELECT HelloWorld.helloWorld FROM HelloWorld WHERE ID_helloWorld ="+1+";";
-		try {
-		   this.executeQuery(requete);
-		   
-		} catch (SQLException e) {
-			e.printStackTrace();		
-		}
-		return requete;
+		return "SELECT HelloWorld.helloWorld FROM HelloWorld ;";
 	} 
 
-	private ResultSet executeQuery(String query) throws SQLException{
-		
-		return this.statement.executeQuery(query);
-		
+	public ResultSet executeQuery(final String query) {
+
+		try {
+			final ResultSet s = this.statement.executeQuery(query);
+			s.next();
+			return s;
+		} catch (final SQLException e) {
+			e.printStackTrace();
+			return null;
+		}
+
 	}
 
 }
