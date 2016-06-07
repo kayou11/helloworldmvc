@@ -2,6 +2,8 @@ package org.model;
 
 import static org.junit.Assert.assertEquals;
 
+import java.sql.SQLException;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,8 +16,9 @@ public class DAOHelloWorldTest {
    }
    
    @Test
-   public void testDAOHelloWorldTest() {
+   public void testDAOHelloWorldTest() throws SQLException {
 	
 	final boolean DAOHelloWorldOpen = true;
-	 assertEquals(DAOHelloWorldOpen, this.DAOHelloWorldTest.open()); }
+	 assertEquals(DAOHelloWorldOpen, this.DAOHelloWorldTest.open()); 
+	}
 }

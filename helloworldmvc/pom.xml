@@ -29,5 +29,6 @@
   	<module>view</module>
   	<module>model</module>
   	<module>contract</module>
+  	<module>main</module>
   </modules>
 </project>

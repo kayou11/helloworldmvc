@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.Statement;
 
 
+
 public class DAOHelloWorld{
 	
 	private static String URL = "jdbc:mysql://localhost:3306/helloWorld";
@@ -41,9 +42,17 @@ public class DAOHelloWorld{
 
 	}
 	
-	public static String getQuerySelectFirstHelloWorld() { 
-		return "SELECT * FROM `HelloWorld` WHERE `ID_helloWorld` = " + 1; 
-	}
+	public String getQuerySelectFirstHelloWorld() throws SQLException {
+		
+		String requete = "SELECT HelloWorld.helloWorld FROM HelloWorld WHERE ID_helloWorld ="+1+";";
+		try {
+		   this.executeQuery(requete);
+		   
+		} catch (SQLException e) {
+			e.printStackTrace();		
+		}
+		return requete;
+	} 
 
 	private ResultSet executeQuery(String query) throws SQLException{
 		

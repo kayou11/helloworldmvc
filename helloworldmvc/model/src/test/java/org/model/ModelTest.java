@@ -2,6 +2,8 @@ package org.model;
 
 import static org.junit.Assert.assertEquals;
 
+import java.sql.SQLException;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,6 +15,6 @@ public class ModelTest {
      this.modelTest = new Model();
    }
    @Test
-   public void testGetHelloWorld() {
+   public void testGetHelloWorld() throws SQLException {
 	 assertEquals("Hello World", this.modelTest.getHelloWorld()); }
 }
